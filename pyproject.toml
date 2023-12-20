@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pixme"
+version = "0.1.0"
+description = ""
+authors = ["Eren Arıman <arimaneren@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+django = "^4.2.1"
+djangorestframework = "^3.14.0"
+djangorestframework-simplejwt = "^5.2.2"
+dj-rest-auth = {extras = ["with-social"], version = "^3.0.0"}
+
+
+[tool.poetry.group.dev.dependencies]
+django-debug-toolbar = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
